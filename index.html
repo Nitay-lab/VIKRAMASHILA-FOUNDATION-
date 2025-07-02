@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VikramShila Foundation</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --accent: #c57b28;
+        --text-dark: #2d2d2d;
+        --bg-light: #faf7f2;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+      }
+      body {
+        background: var(--bg-light);
+        color: var(--text-dark);
+        line-height: 1.6;
+      }
+      .hero {
+        position: relative;
+        width: 100%;
+        min-height: 75vh;
+        background: url('images/vikramshila-banner-real.jpg') center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 1rem;
+      }
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .hero-content {
+        position: relative;
+        z-index: 1;
+        max-width: 960px;
+        color: #fff;
+      }
+      .hero h1 {
+        font-size: clamp(2.5rem, 6vw, 4rem);
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+      .hero p {
+        margin-top: 1rem;
+        font-size: clamp(1rem, 3vw, 1.25rem);
+        max-width: 600px;
+        margin-inline: auto;
+      }
+      .btn-primary {
+        display: inline-block;
+        margin-top: 2rem;
+        background: var(--accent);
+        color: #fff;
+        padding: 0.75rem 1.5rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background 0.3s ease;
+      }
+      .btn-primary:hover {
+        background: #a9661e;
+      }
+      section {
+        padding: 4rem 1.25rem;
+        max-width: 1040px;
+        margin-inline: auto;
+      }
+      section h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        color: var(--accent);
+      }
+      .about {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        align-items: center;
+      }
+      .about img {
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+      }
+      .programs {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      }
+      .card {
+        background: #fff;
+        padding: 2rem 1.25rem;
+        border-radius: 8px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        text-align: center;
+      }
+      .card h3 {
+        margin-bottom: 0.75rem;
+        color: var(--accent);
+      }
+      .cta {
+        background: var(--accent);
+        color: #fff;
+        border-radius: 8px;
+        text-align: center;
+        padding: 3rem 1rem;
+      }
+      .cta h2 {
+        color: #fff;
+      }
+      footer {
+        background: #2d2d2d;
+        color: #ddd;
+        text-align: center;
+        padding: 2rem 1rem;
+      }
+      footer a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-content">
+        <h1>VikramShila Foundation</h1>
+        <p>Empowering communities through education, heritage preservation, and social welfare.</p>
+        <a href="#programs" class="btn-primary">Our Programs</a>
+      </div>
+    </header>
+    <section id="about">
+      <h2>About Us</h2>
+      <div class="about">
+        <div>
+          <p>
+            Inspired by the ancient seat of learning at Vikramashila Mahavihara, we work
+            to bring quality education and holistic welfare to underserved communities
+            in Bihar and beyond. Our initiatives blend historical wisdom with
+            contemporary practices to foster sustainable growth.
+          </p>
+        </div>
+        <img src="images/about-vikramshila.jpg" alt="Volunteers teaching children outdoors" />
+      </div>
+    </section>
+    <section id="programs">
+      <h2>Our Work</h2>
+      <div class="programs">
+        <div class="card">
+          <h3>Education</h3>
+          <p>Free learning centers, mentorship, and scholarship programs nurturing bright futures.</p>
+        </div>
+        <div class="card">
+          <h3>Social Welfare</h3>
+          <p>Health camps, women empowerment, and relief efforts improving community well-being.</p>
+        </div>
+        <div class="card">
+          <h3>Heritage Preservation</h3>
+          <p>Promoting cultural pride and conservation of Bihar's historic sites, including Vikramashila.</p>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <h2>Get Involved</h2>
+      <p>Join our mission to uplift lives and honor history. Become a volunteer or make a contribution today.</p>
+      <a href="#contact" class="btn-primary" style="background:#fff;color:var(--accent);">Donate Now</a>
+    </section>
+    <footer id="contact">
+      <p>&copy; 2025 VikramShila Foundation. All Rights Reserved.</p>
+      <p>Email: <a href="mailto:info@vikramshila.org">info@vikramshila.org</a> | Phone: +91-000-000-0000</p>
+    </footer>
+  </body>
+</html>
